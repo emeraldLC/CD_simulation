@@ -12,9 +12,10 @@
 <div class="auth-container">
 <div class="auth-card">
     <img src="logo.jpg" class="logo" alt="Emerald logo" />
- <div style="padding:10px;text-align:center; color: white;">
+   <div style="padding:10px;text-align:center; color: white">
 ⚠️ Educational IELTS Simulation Platform — No real accounts or data collection
 </div>
+
     <p class="auth-eyebrow">Emerald Learning Centre</p>
     <h2>Xush kelibsiz</h2>
     <p class="auth-subtitle">Enter to continue your IELTS practice.</p>
@@ -23,26 +24,22 @@
         <input type="text" id="nameInput" placeholder="Ismingiz" />
 
         <div class="password-wrapper">
-            <input 
-  type="text" 
-  id="codeInput" 
-  placeholder="Demo kodni kiriting"
-  autocomplete="one-time-code"
-  autocorrect="off"
-  autocapitalize="none"
-  spellcheck="false"
-/>
-            
+            <input type="password" id="passwordInput" placeholder="Demo kod" />
+            <i id="togglePassword" class="fa-solid fa-eye toggle-password"></i>
         </div>
 
         <div class="auth-row">
+            <label class="auth-check">
+                <input type="checkbox" id="showPasswordCheck">
+                <span>Show password</span>
+            </label>
+
            
-            
         </div>
 
         <p id="errorText" class="error"></p>
 
-        <button id="loginBtn">Start Session</button>
+        <button id="loginBtn">Start</button>
 
         <button id="createAccountBtn" class="auth-secondary-btn" type="button">
            Get Access from Instructor
